@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>The Weather</h1>
+    <form onsubmit='return false'>
+        <label for='city'>City:</label>
+        <input type='text' name='city'>
+        <input id='submit-city' type='submit' value='Submit'>
+    </form>
+    <div id='weather-card'>
+        <div id='top-card'>
+            <p id ='card-name'></p>
+            <p id='card-temp'></p>
+            <p id='card-description'></p>
+            <p id='card-minor'></p>
+        </div>
+        <div id='bottem-card'>
+
+        </div>
+    </div>
+
+    <script src='main.js'></script>
+</body>    
+</html>
