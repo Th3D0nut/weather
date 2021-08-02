@@ -15,3 +15,9 @@ submitCity.addEventListener('click', async (e) => {
   displayWeatherSummary(weatherData);
   displayExtraWeatherInfo(weatherData);
 });
+
+window.addEventListener('load', async function() {
+  weatherData = await retrieveWeather('amsterdam');
+  displayWeatherSummary(weatherData);
+  displayExtraWeatherInfo(weatherData);
+});

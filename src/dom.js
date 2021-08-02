@@ -32,6 +32,7 @@ function displayExtraWeatherInfo(weatherData) {
       } else {
         newElement.textContent = `${correctString(key)}: ${weatherData.main[key]}`;
       }
+      newElement.classList.add('weather-info');
       bottemCard.appendChild(newElement);
     }
   });
